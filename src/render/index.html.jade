@@ -6,3 +6,31 @@ layout: "default"
 .jumbotron
   h1= site.title
   p= site.description
+
+.row
+  .col-md-2
+  .col-md-3
+    .category
+      a(href=getUrl("/concepts/layer"))
+        h3 Layers
+        p Reactive, reusable datasets
+  .col-md-2
+  .col-md-3
+    .category
+      a(href=getUrl("/concepts/stratum"))
+        h3 Strata
+        p Unique sets of layers
+
+.row
+  .col-md-2
+  .col-md-3
+    .category
+      a(href=getUrl("/concepts/slice"))
+        h3 Slices
+        p Just the data needed, and nothing else
+  .col-md-2
+  .col-md-3
+    .category
+      a(href=getUrl("/concepts/miner"))
+        h3 Miners
+        p Smart retrieval for distributed config data

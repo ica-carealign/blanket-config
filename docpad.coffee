@@ -6,7 +6,7 @@ docpadConfig = {
 	templateData:
     site:
       author: "The Tribe"
-      description: "layers of intelligent configuration for the next generation of applications"
+      description: "intelligent configuration for the next generation of applications"
       keywords: "config, configuration, api, platform, cloud"
       title: "blanket-config"
       url: "http://tribesoftware.org/blanket-config"

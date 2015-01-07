@@ -16,8 +16,8 @@
 - scripts.add(["//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"])
 
 //- Site + Document scripts and styles
-- styles.add([getUrl("styles/style.css")])
-- scripts.add([getUrl("scripts/script.js")])
+- styles.add([getUrl("/styles/style.css")])
+- scripts.add([getUrl("/scripts/script.js")])
 - scripts.add(document.scripts || [])
 
 doctype html
@@ -38,8 +38,8 @@ html(lang="en")
   body
     .container
       section#content.content!= content
+    .footer
       hr
-      footer
-        .copyright &copy; #{getAuthor()} #{site.date.getFullYear()}
+      .copyright &copy; #{getAuthor()} #{site.date.getFullYear()}
 
     != scripts.toHTML()
